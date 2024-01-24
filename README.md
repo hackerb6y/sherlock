@@ -33,18 +33,22 @@ $ cd sherlock
 
 # install the requirements
 $ python3 -m pip install -r requirements.txt
-```
 
-## Usage
+# change the working directory to sherlock
+$ cd sherlock
 
-```console
+# install the requirements
+$ python3 -m pip install -r requirements.txt
+
+
 $ python3 sherlock --help
 usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT]
                 [--output OUTPUT] [--tor] [--unique-tor] [--csv]
                 [--site SITE_NAME] [--proxy PROXY_URL] [--json JSON_FILE]
                 [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color]
                 [--browse] [--local] [--nsfw]
-                USERNAMES [USERNAMES ...]
+                USERNAMES [USERNAMES wds_skat6374
+
 
 Sherlock: Find Usernames Across Social Networks (Version 0.14.3)
 
@@ -85,6 +89,7 @@ optional arguments:
   --local, -l           Force the use of the local data.json file.
   --nsfw                Include checking of NSFW sites from default list.
 ```
+
 
 To search for only one user:
 ```
@@ -158,23 +163,5 @@ outputs, and instead shows the verbose output of the tests.
 
 ```console
 $ cd sherlock/sherlock
-$ python3 -m unittest tests.all --verbose
-```
+$ python3 -m unittest tests.all --verbosel
 
-Note that we do currently have 100% test coverage.  Unfortunately, some of
-the sites that Sherlock checks are not always reliable, so it is common
-to get response problems.  Any problems in connection will show up as
-warnings in the tests instead of true errors.
-
-If some sites are failing due to connection problems (site is down, in maintenance, etc)
-you can exclude them from tests by creating a `tests/.excluded_sites` file with a
-list of sites to ignore (one site name per line).
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/sherlock-project/sherlock.svg)](https://starchart.cc/sherlock-project/sherlock)
-
-## License
-
-MIT © Sherlock Project<br/>
-Original Creator - [Siddharth Dushantha](https://github.com/sdushantha)
