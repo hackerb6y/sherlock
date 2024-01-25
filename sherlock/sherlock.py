@@ -1,16 +1,17 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python3s
 
 """
 Sherlock: Find Usernames Across Social Networks Module
 
 This module contains the main logic to search for usernames at social
-networks.
+networks.snapchat.com
+
 """
 
 import csv
 import signal
 import pandas as pd
-import os
+import osh
 import platform
 import re
 import sys
